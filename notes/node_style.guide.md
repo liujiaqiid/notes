@@ -1,6 +1,6 @@
 # Node Style Guide
 
-# Guide
+## Guide
 
 
 ## Refs
