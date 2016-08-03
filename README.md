@@ -1,6 +1,7 @@
-# notes
+# notes    
+
 Bad notes is better than good memory !!  -- Somebody
-========
+
 ## Tech
 - JS
   - ES6
