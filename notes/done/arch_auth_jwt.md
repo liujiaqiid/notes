@@ -7,7 +7,8 @@
 - 支持加密方式包括：HMAC-SHA256(对称加密);RSA(public/private key 非对称加密); RSA加解密速度比HMAC慢;
 - JWT包括三部分：Header、Payload、Signature;
 - 可用于无状态的认证，每次访问携带JWT，进行认证授权; JWT的信息自足，可以避免多次查询数据库;
-- Use case:  
+
+## Use case:  
 ```
 How we use JSON Web Tokens in Auth0?
 In Auth0, we issue JWTs as a result of the authentication process.
