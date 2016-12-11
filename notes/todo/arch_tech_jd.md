@@ -1,4 +1,4 @@
-# Tech Job Description
+# Tech Team Job Description
 
 ## 技术研发部门
 
