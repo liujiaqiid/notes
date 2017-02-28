@@ -33,11 +33,21 @@ UCC SSL 让您能够仅凭一个 SSL 就可保护一个主域名和多达 99 个
 ### 苹果系统对ssl的支持
 
 
+#### 阿里云申请免费https
+1. 登陆阿里云后台管理控制台
+2. 选择产品与服务——安全——证书服务
+3. 购买证书——免费型DV SSL(赛门铁克)——购买
+4. 我的证书列表——补全信息
+5. 输入具体子域名信息 eg. aa.bb.cc.com
+6. 填写个人信息, 注： 域名验证类型 选用了默认的 DNS
+7. 选择系统生成CSR，点创建，点生成
+8. 点击进度，查看需要在DNS服务上配置的信息,新增DNS配置
+9. 审核成功后，点击下载相应的证书
+10. 服务器配置,参见下
 
 #### Nginx 配置
 
-- Demo1 通过nginx设置https请求的version路由    
-
+- Demo 通过nginx设置https请求的version路由
 ```    
 server {
         listen 443;
@@ -79,6 +89,11 @@ server {
 
 ```
 
+- 重启Nginx服务
+
+```
+/usr/sbin/nginx -s reload
+```
 
 ## Refs
 - [SSL服务对比](https://www.zhihu.com/question/19578422)
